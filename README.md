@@ -65,33 +65,28 @@ It enables:
 
 ---
 
-## Tech Stack
+## ⚙️ Tech Stack
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
-- Vercel (deployment)
+### 🌐 Frontend
+- HTML5  
+- CSS3  
+- JavaScript  
 
-### Backend
-- Node.js
-- Express.js
-- Prisma ORM
-- Upstash Redis
-- Zod
-- JWT Authentication
-- bcrypt
+### ☁️ Cloud & Hosting
+- Firebase Hosting  
+- Google Cloud Run  
 
-### Database / Storage
-- Prisma-supported database
-- Redis cache (Upstash)
+### 🤖 AI & Intelligence
+- Google Gemini API (for explanations & insights)  
 
-### AI / Cloud (project architecture)
-- Google Gemini
-- Firebase Hosting
-- Cloud Run
-- BigQuery
-- Cloud Storage
+### 📊 Data & Analytics
+- Google BigQuery (audit logs & analysis)  
+
+### 📦 Storage
+- Google Cloud Storage (datasets & reports)  
+
+### 🔗 Integration
+- REST APIs for model audit workflows  
 
 
 ---
