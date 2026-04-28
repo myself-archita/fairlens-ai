@@ -1,4 +1,5 @@
 # 🚀 FairLens AI
+🏆 Built for Responsible AI & Fairness Auditing
 
 <p align="center">AI Fairness • Responsible AI • Bias Detection</p>
 
