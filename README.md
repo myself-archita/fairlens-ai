@@ -82,6 +82,24 @@ Deployment: Vercel
 
 ---
 
+## 📊 Results & Impact
+
+- Identified bias in decision outcomes across protected attributes  
+- Applied fairness metrics to evaluate model decisions  
+- Built an interactive dashboard for bias visualization  
+- Improved transparency in automated decision-making systems  
+
+---
+
+## 🧠 Model & Approach
+
+- Data preprocessing using Pandas  
+- Bias detection using statistical fairness metrics  
+- Model evaluation across demographic groups  
+- Visualization using dashboards and charts  
+
+---
+
 ## 🌍 Real-World Impact
 
 FairLens AI helps organizations:
@@ -96,7 +114,7 @@ FairLens AI helps organizations:
 
 - Simple interface for non-technical users  
 - Combines fairness metrics with visual insights  
-- Focused on real-world deployment scenarios  
+- Designed for real-world deployment scenarios  
 
 ---
 
@@ -125,6 +143,12 @@ FairLens AI helps organizations:
 ## 📄 Documentation
 
 [View Full Project PDF](./docs/FairLensPrototype.pdf)
+
+---
+
+## 🎥 Demo Video (Optional)
+
+Add your demo video link here  
 
 ---
 
