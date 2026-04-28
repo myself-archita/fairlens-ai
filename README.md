@@ -4,6 +4,13 @@
 
 AI-powered fairness auditing platform to detect and mitigate bias in decision-making systems.
 
+## 🎯 Key Highlights
+
+- 🚀 Built an AI fairness auditing platform  
+- 📊 Implements Demographic Parity & Equal Opportunity  
+- 🌐 Deployed live with interactive dashboard  
+- 📄 Includes full project documentation  
+
 ---
 
 ## ❗ Problem
