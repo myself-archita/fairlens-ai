@@ -1,5 +1,7 @@
 # 🚀 FairLens AI
 
+<p align="center">AI Fairness • Responsible AI • Bias Detection</p>
+
 AI-powered fairness auditing platform to detect and mitigate bias in decision-making systems.
 
 ---
@@ -68,7 +70,7 @@ Deployment: Vercel
 
 ## 🧩 System Architecture
 
-User → Frontend → Backend → ML Model → Bias Detection Engine → Results Dashboard  
+![Architecture](./public/architecture.png)
 
 ---
 
@@ -80,6 +82,24 @@ User → Frontend → Backend → ML Model → Bias Detection Engine → Results
 
 ---
 
+## 🌍 Real-World Impact
+
+FairLens AI helps organizations:
+- Reduce bias in hiring systems  
+- Ensure fairness in financial decisions  
+- Build ethical AI systems  
+- Comply with responsible AI guidelines  
+
+---
+
+## 🚀 Why FairLens AI?
+
+- Simple interface for non-technical users  
+- Combines fairness metrics with visual insights  
+- Focused on real-world deployment scenarios  
+
+---
+
 ## 🌐 Live Demo
 
 👉 https://fairlens-ai.vercel.app  
@@ -88,14 +108,23 @@ User → Frontend → Backend → ML Model → Bias Detection Engine → Results
 
 ## 📸 Screenshots
 
-![Homepage](./public/screenshot1.png)  
-![Analysis](./public/screenshot2.png)  
+### 🔹 Preview
+![Preview](./public/preview.png)
+
+### 🔹 Dashboard
+![Dashboard](./public/dashboard.png)
+
+### 🔹 Workflow
+![Workflow](./public/workflow.png)
+
+### 🔹 Architecture
+![Architecture](./public/architecture.png)
 
 ---
 
 ## 📄 Documentation
 
-[View Project PDF](./docs/FairLensPrototype.pdf)
+[View Full Project PDF](./docs/FairLensPrototype.pdf)
 
 ---
 
