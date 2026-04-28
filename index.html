@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FairLens AI | Unbiased AI Decision Prototype</title>
+  <meta
+    name="description"
+    content="FairLens AI is a prototype that audits datasets and AI decisions for hidden bias before they affect real people."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-orb orb-one"></div>
+    <div class="site-orb orb-two"></div>
+    <div class="site-grid"></div>
+  </div>
+
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">FL</span>
+        <span>FairLens AI</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#console">Live Demo</a>
+        <a href="#checks">Workflow</a>
+        <a href="#solution">Features</a>
+        <a href="#reporting">Outputs</a>
+        <a href="#architecture">Tech</a>
+      </div>
+    </nav>
+
+    <section class="hero-panel reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Fairness Intelligence Platform</p>
+        <h1>FairLens AI - Detect Bias Before It Impacts Lives</h1>
+        <p class="lead">
+          Used in hiring, lending, and healthcare to ensure fair AI decisions.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#console">Run Audit Demo</a>
+          <a class="button secondary" href="#reporting">View Outputs</a>
+        </div>
+        <dl class="hero-stats">
+          <div>
+            <dt>Coverage</dt>
+            <dd>Hiring, lending, healthcare</dd>
+          </div>
+          <div>
+            <dt>Core AI</dt>
+            <dd>Gemini-powered explanations</dd>
+          </div>
+          <div>
+            <dt>Decision Stage</dt>
+            <dd>Before deployment</dd>
+          </div>
+          <div>
+            <dt>Workflow</dt>
+            <dd>Audit, explain, mitigate</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual">
+        <article class="dashboard-card">
+          <div class="dashboard-header">
+            <span class="pill danger" id="hero-risk-pill">High-risk review</span>
+            <span class="timestamp" id="audit-timestamp">Updated just now</span>
+          </div>
+          <h2 id="hero-audit-title">Loan approval audit</h2>
+          <div class="risk-meter">
+            <div class="risk-ring">
+              <strong id="hero-bias-gap">18%</strong>
+              <span>fairness gap</span>
+            </div>
+            <ul class="metric-list">
+              <li><span>Bias risk</span><strong id="hero-risk-level">High</strong></li>
+              <li><span>Lowest group</span><strong id="hero-low-group">Group C</strong></li>
+              <li><span>Explainability score</span><strong id="hero-explain-score">91/100</strong></li>
+            </ul>
+          </div>
+          <div class="dashboard-note">
+            <h3>Gemini review</h3>
+            <p id="hero-review-copy">Bias detected in Group C due to significant disparity between approval outcomes, suggesting imbalance in training data and threshold behavior.</p>
+          </div>
+          <div class="mini-actions">
+            <button type="button">Flag decision path</button>
+            <button type="button">Generate mitigation plan</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </header>
+
+  <main class="page-shell">
+    <section class="section reveal" id="console">
+      <div class="section-heading">
+        <p class="eyebrow">Audit Workspace</p>
+        <h2>Production-style fairness dashboard for real-world review</h2>
+      </div>
+      <div class="product-metrics">
+        <article class="product-metric-card">
+          <span>Bias Risk</span>
+          <strong id="metric-risk-card">HIGH</strong>
+          <small id="metric-risk-copy">Critical disparity detected</small>
+        </article>
+        <article class="product-metric-card">
+          <span>Fairness Gap</span>
+          <strong id="metric-gap-card">18%</strong>
+          <small id="metric-gap-copy">Difference across groups</small>
+        </article>
+        <article class="product-metric-card">
+          <span>Model Status</span>
+          <strong id="metric-status-card">Flagged</strong>
+          <small id="metric-status-copy">Needs mitigation before release</small>
+        </article>
+      </div>
+      <div class="bias-alert" id="bias-alert">
+        <div class="bias-alert-icon" aria-hidden="true">!</div>
+        <div>
+          <h3 id="alert-title">High Bias Detected</h3>
+          <p id="alert-group">Group C shows lowest fairness score</p>
+          <span id="alert-risk">Risk Level: HIGH</span>
+        </div>
+      </div>
+      <div class="audit-analytics">
+        <article class="analytics-card">
+          <div class="analytics-head">
+            <div>
+              <p class="eyebrow">Fairness Comparison</p>
+              <h3>Group outcome graph</h3>
+            </div>
+            <span class="analytics-tag">Live audit</span>
+          </div>
+          <div class="comparison-chart" id="comparison-chart" aria-label="Group fairness comparison">
+            <div class="comparison-row">
+              <span class="comparison-label" id="compare-label-a">Group A</span>
+              <div class="comparison-track"><div class="comparison-fill high" id="compare-fill-a" style="width: 82%"></div></div>
+              <strong id="compare-value-a">82%</strong>
+            </div>
+            <div class="comparison-row">
+              <span class="comparison-label" id="compare-label-b">Group B</span>
+              <div class="comparison-track"><div class="comparison-fill medium" id="compare-fill-b" style="width: 63%"></div></div>
+              <strong id="compare-value-b">63%</strong>
+            </div>
+            <div class="comparison-row">
+              <span class="comparison-label" id="compare-label-c">Group C</span>
+              <div class="comparison-track"><div class="comparison-fill low" id="compare-fill-c" style="width: 46%"></div></div>
+              <strong id="compare-value-c">46%</strong>
+            </div>
+          </div>
+        </article>
+        <article class="analytics-card">
+          <div class="analytics-head">
+            <div>
+              <p class="eyebrow">Monitoring Snapshot</p>
+              <h3>Bias trend over time</h3>
+            </div>
+            <span class="analytics-tag">7 days</span>
+          </div>
+          <div class="trend-chart">
+            <div class="trend-grid"></div>
+            <div class="trend-area" id="trend-area"></div>
+            <div class="trend-points">
+              <span style="left: 2%; top: 66%"></span>
+              <span style="left: 18%; top: 58%"></span>
+              <span style="left: 34%; top: 48%"></span>
+              <span style="left: 50%; top: 54%"></span>
+              <span style="left: 66%; top: 37%"></span>
+              <span style="left: 82%; top: 43%"></span>
+              <span style="left: 96%; top: 26%"></span>
+            </div>
+          </div>
+          <div class="trend-labels">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+          </div>
+        </article>
+      </div>
+      <div class="console-layout">
+        <article class="console-panel">
+          <div class="console-toolbar" role="tablist" aria-label="Demo audit scenarios">
+            <button class="scenario-chip active" type="button" data-scenario="lending" aria-pressed="true">Lending</button>
+            <button class="scenario-chip" type="button" data-scenario="hiring" aria-pressed="false">Hiring</button>
+            <button class="scenario-chip" type="button" data-scenario="healthcare" aria-pressed="false">Healthcare</button>
+          </div>
+          <div class="audit-actions">
+            <button class="button primary audit-runner" id="run-audit" type="button">
+              <span class="spinner" id="audit-spinner" aria-hidden="true"></span>
+              <span id="run-audit-label">Run Audit</span>
+            </button>
+            <button class="button secondary" type="button">View AI Explanation -></button>
+            <button class="button secondary" type="button">Download Report (PDF)</button>
+          </div>
+          <div class="console-summary">
+            <div>
+              <p class="console-label">Current review</p>
+              <h3 id="scenario-title">Loan approval model v4.2</h3>
+            </div>
+            <span class="pill danger" id="scenario-risk">High risk</span>
+          </div>
+          <p class="console-description" id="scenario-description">
+            The model approves urban applicants more often than rural applicants even when income and repayment history are similar.
+          </p>
+          <div class="console-metrics">
+            <article class="console-metric">
+              <span>Disparate impact</span>
+              <strong id="metric-impact">0.68</strong>
+              <small>Flag if below 0.80</small>
+            </article>
+            <article class="console-metric">
+              <span>False negative gap</span>
+              <strong id="metric-gap">14%</strong>
+              <small>Difference between groups</small>
+            </article>
+            <article class="console-metric">
+              <span>Explainability confidence</span>
+              <strong id="metric-confidence">91/100</strong>
+              <small>How strong the evidence is</small>
+            </article>
+          </div>
+        </article>
+
+        <article class="console-panel light-panel">
+          <h3>What FairLens checks</h3>
+          <div class="signal-list" id="signal-list">
+            <div class="signal-row">
+              <span>Approval rate parity</span>
+              <strong class="signal-status danger-text">Fail</strong>
+            </div>
+            <div class="signal-row">
+              <span>Proxy variable detection</span>
+              <strong class="signal-status warning-text">Watch</strong>
+            </div>
+            <div class="signal-row">
+              <span>Explanation consistency</span>
+              <strong class="signal-status success-text">Pass</strong>
+            </div>
+          </div>
+          <div class="console-insight">
+            <h4>AI explanation</h4>
+            <p id="scenario-finding">Bias detected in Group C due to significant disparity (46% vs 82%). This indicates potential underrepresentation or imbalance in training data. Suggested mitigation includes reweighting or threshold adjustment.</p>
+          </div>
+          <div class="console-insight emphasis">
+            <h4>Recommended fix</h4>
+            <p id="scenario-fix">Remove postcode-weighted features, widen the human-review band for borderline cases, and re-audit the model before release.</p>
+          </div>
+        </article>
+      </div>
+      <div class="judge-lab">
+        <article class="judge-card">
+          <div class="judge-heading">
+            <div>
+              <p class="eyebrow">Judge Test Mode</p>
+              <h3>Try your own sample CSV</h3>
+            </div>
+            <span class="pill success">Interactive</span>
+          </div>
+          <p class="judge-copy">
+            Paste a small CSV with columns named <code>group</code> and <code>approved</code>. Example values: <code>rural,0</code> or <code>urban,1</code>.
+          </p>
+          <textarea
+            id="judge-data"
+            class="judge-input"
+            rows="10"
+            spellcheck="false"
+          >group,approved
+urban,1
+urban,1
+urban,1
+urban,0
+rural,1
+rural,0
+rural,0
+rural,0</textarea>
+          <div class="judge-actions">
+            <button class="button primary judge-button" id="analyze-judge-data" type="button">Analyze My Data</button>
+            <button class="button secondary judge-button" id="load-sample-data" type="button">Reset Sample</button>
+          </div>
+        </article>
+        <article class="judge-card judge-results">
+          <h3>Your fairness result</h3>
+          <div class="judge-metrics">
+            <div class="judge-metric">
+              <span>Group A approval rate</span>
+              <strong id="judge-rate-a">75%</strong>
+            </div>
+            <div class="judge-metric">
+              <span>Group B approval rate</span>
+              <strong id="judge-rate-b">25%</strong>
+            </div>
+            <div class="judge-metric">
+              <span>Disparate impact</span>
+              <strong id="judge-impact">0.33</strong>
+            </div>
+          </div>
+          <div class="judge-summary" id="judge-summary">
+            Bias risk is high because one group is being approved far less often than the other in the provided sample.
+          </div>
+          <p class="judge-note" id="judge-note">
+            Parsed groups: <strong id="judge-groups">urban and rural</strong>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="checks">
+      <div class="section-heading">
+        <p class="eyebrow">Workflow</p>
+        <h2>Measure -> Flag -> Fix</h2>
+      </div>
+      <div class="checks-grid compact-checks">
+        <article class="check-card">
+          <h3>Step 1: Measure</h3>
+          <p>Detect bias gaps</p>
+        </article>
+        <article class="check-card">
+          <h3>Step 2: Flag</h3>
+          <p>Highlight affected groups</p>
+        </article>
+        <article class="check-card">
+          <h3>Step 3: Fix</h3>
+          <p>Apply mitigation before deployment</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="solution">
+      <div class="section-heading">
+        <p class="eyebrow">Features</p>
+        <h2>Core product capabilities</h2>
+      </div>
+      <div class="feature-strip" id="features">
+        <span>Bias Scan</span>
+        <span>AI Explanation</span>
+        <span>Decision Replay</span>
+        <span>Mitigation</span>
+        <span>Reports</span>
+        <span>Monitoring</span>
+      </div>
+    </section>
+
+    <section class="section reveal" id="reporting">
+      <div class="section-heading">
+        <p class="eyebrow">Outputs</p>
+        <h2>What organizations can act on</h2>
+      </div>
+      <div class="report-grid">
+        <article class="report-card">
+          <h3>Executive fairness summary</h3>
+          <p>One-page overview of severity, affected groups, and release recommendation.</p>
+        </article>
+        <article class="report-card">
+          <h3>Monitoring & alerts</h3>
+          <p>Notifications when deployed systems drift back toward unfair behavior.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="architecture">
+      <div class="section-heading">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Built with: Firebase | Cloud Run | Gemini | BigQuery</h2>
+      </div>
+    </section>
+
+    <section class="section reveal cta-section">
+      <div class="cta-copy">
+        <p class="closing-line">Fair AI should be transparent, explainable, and actionable.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
