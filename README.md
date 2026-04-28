@@ -4,12 +4,20 @@
 
 AI-powered fairness auditing platform to detect and mitigate bias in decision-making systems.
 
+---
+
 ## 🎯 Key Highlights
 
 - 🚀 Built an AI fairness auditing platform  
 - 📊 Implements Demographic Parity & Equal Opportunity  
 - 🌐 Deployed live with interactive dashboard  
 - 📄 Includes full project documentation  
+
+---
+
+## 🎥 Demo Video
+
+[Watch Demo Video](https://drive.google.com/file/d/1WzmRcHT3WN2GQS69DkW_YuUjTL90YrnS/view?usp=sharing)
 
 ---
 
@@ -150,12 +158,6 @@ FairLens AI helps organizations:
 ## 📄 Documentation
 
 [View Full Project PDF](./docs/FairLensPrototype.pdf)
-
----
-
-## 🎥 Demo Video (Optional)
-
-Add your demo video link here  
 
 ---
 
