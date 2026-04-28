@@ -65,12 +65,34 @@ It enables:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-Frontend: HTML, CSS, JavaScript  
-Backend: Python / Flask  
-AI/ML: Scikit-learn, Pandas  
-Deployment: Vercel  
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- Vercel (deployment)
+
+### Backend
+- Node.js
+- Express.js
+- Prisma ORM
+- Upstash Redis
+- Zod
+- JWT Authentication
+- bcrypt
+
+### Database / Storage
+- Prisma-supported database
+- Redis cache (Upstash)
+
+### AI / Cloud (project architecture)
+- Google Gemini
+- Firebase Hosting
+- Cloud Run
+- BigQuery
+- Cloud Storage
+
 
 ---
 
